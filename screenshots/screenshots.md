@@ -10,7 +10,6 @@
 
 03-sns-topic.png:
 
-
 <img width="1920" height="1080" alt="Screenshot (600)" src="https://github.com/user-attachments/assets/f0555844-9d62-49a3-91f6-64eedcb9c0a8" />
 <img width="1920" height="1080" alt="Screenshot (601)" src="https://github.com/user-attachments/assets/17dd4052-76fa-4db6-b433-d8a678d35b20" />
 <img width="1920" height="1080" alt="Screenshot (602)" src="https://github.com/user-attachments/assets/c7e04240-ccc6-469f-acb5-9be99205af06" />
