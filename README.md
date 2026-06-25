@@ -128,3 +128,187 @@ aws-serverless-image-processing/
 │
 └── images/
 ```
+---
+
+# 🏛️ Architecture Highlights
+
+This project follows an **event-driven serverless architecture**, where AWS services communicate automatically without requiring dedicated servers.
+
+### Key Design Decisions
+
+- Event-driven processing using Amazon S3 Event Notifications
+- Fully serverless compute using AWS Lambda
+- Secure access management with IAM Roles
+- Dependency management using Lambda Layers
+- Automatic notifications through Amazon SNS
+- Centralized logging with Amazon CloudWatch
+
+---
+
+# 🚀 Deployment Guide
+
+Follow these steps to deploy the project:
+
+### Step 1
+
+Create an IAM Role for Lambda.
+
+Attach appropriate permissions for:
+
+- Amazon S3
+- Amazon SNS
+- CloudWatch Logs
+
+---
+
+### Step 2
+
+Create an Amazon S3 bucket.
+
+Inside the bucket create two folders.
+
+```
+uploads/
+processed/
+```
+
+---
+
+### Step 3
+
+Create an Amazon SNS Topic.
+
+Subscribe your email address and confirm the subscription.
+
+---
+
+### Step 4
+
+Create the Pillow Lambda Layer.
+
+Attach the layer to the Lambda Function.
+
+---
+
+### Step 5
+
+Create the Lambda Function.
+
+Configure:
+
+- Runtime
+- IAM Role
+- Environment Variables
+- Lambda Layer
+
+---
+
+### Step 6
+
+Configure Amazon S3 Event Notification.
+
+Trigger:
+
+Object Created
+
+Prefix:
+
+```
+uploads/
+```
+
+Suffix:
+
+```
+.jpg
+```
+
+Destination:
+
+AWS Lambda
+
+---
+
+### Step 7
+
+Upload an image inside
+
+```
+uploads/
+```
+
+The application will automatically process the image.
+
+---
+
+# ✅ Verification
+
+Successful deployment can be verified by checking:
+
+- Processed image available in **processed/**
+- SNS email received
+- CloudWatch execution logs generated
+- Lambda invocation successful
+
+---
+
+# 💼 Skills Demonstrated
+
+This project demonstrates practical experience with:
+
+- Amazon S3
+- AWS Lambda
+- Lambda Layers
+- Amazon SNS
+- Amazon CloudWatch
+- IAM Roles & Policies
+- Event-Driven Architecture
+- Serverless Computing
+- Python Automation
+- Cloud Monitoring
+
+---
+
+# 📈 Future Enhancements
+
+Future improvements planned for this project:
+
+- Support PNG and WebP images
+- Image compression
+- Watermarking
+- Image metadata extraction
+- Multiple image resolutions
+- Infrastructure as Code using Terraform
+- CI/CD deployment using Jenkins
+- Containerized image processing using Docker
+- Monitoring dashboard using CloudWatch Metrics
+
+---
+
+# 📸 Project Screenshots
+
+The screenshots below demonstrate the successful implementation of the project.
+
+| Screenshot | Description |
+|------------|-------------|
+| S3 Bucket | Bucket configuration |
+| IAM Role | Lambda execution role |
+| SNS Topic | Email notification service |
+| Lambda Layer | Pillow dependency |
+| Lambda Function | Processing logic |
+| S3 Trigger | Event notification |
+| CloudWatch Logs | Execution logs |
+| Processed Image | Output verification |
+| Email Notification | Successful processing |
+
+---
+
+# 📄 Project Documentation
+
+Additional documentation is available inside the **docs/** directory.
+
+- Deployment Guide
+- Architecture Documentation
+- Troubleshooting Guide
+
+---
