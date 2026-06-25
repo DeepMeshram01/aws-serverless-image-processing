@@ -1,10 +1,11 @@
 # 🚀 AWS Serverless Image Processing Platform
-<img width="1536" height="1024" alt="architecture-diagram png" src="https://github.com/user-attachments/assets/5b6a54cd-63f5-46a4-9cb4-222be74b5a4a" />
+
 
 
 > **An event-driven serverless application that automatically resizes uploaded images using AWS Lambda and stores the processed images back into Amazon S3 while sending real-time email notifications through Amazon SNS.**
 
 ---
+<img width="1536" height="1024" alt="architecture-diagram png" src="https://github.com/user-attachments/assets/5b6a54cd-63f5-46a4-9cb4-222be74b5a4a" />
 
 ## 📖 Project Overview
 
