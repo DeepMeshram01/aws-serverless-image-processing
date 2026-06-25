@@ -1,0 +1,10 @@
+01-s3-bucket.png
+02-iam-role.png
+03-sns-topic.png
+04-lambda-layer.png
+05-lambda-function.png
+06-s3-trigger.png
+07-cloudwatch-logs.png
+08-uploaded-image.png
+09-processed-image.png
+10-email-notification.png
